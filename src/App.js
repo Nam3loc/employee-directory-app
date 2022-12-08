@@ -1,14 +1,8 @@
 import './App.css';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
-import EmployeeListItem from './components/EmployeeListItem';
-import dataArr from './data';
+import EmployeeList from './components/EmployeeList';
 
-const data = dataArr.map((ele, idx) => {
-  return (
-    <EmployeeListItem key={idx} {...ele} />
-  )
-})
 
 function App() {
   return (
@@ -16,7 +10,7 @@ function App() {
       <div className="HomePage">
         <Header />
         <SearchBar />
-        <section>{data}</section>
+        <EmployeeList />
       </div>
     </div>
   );

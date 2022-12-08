@@ -1,8 +1,8 @@
 export default function SearchBar() {
     return (
-        <>
-            <input type="text" placeholder="Search..." name="search" />
-            <input type="button" value="Submit" />
-        </>
+        <div className="searchbarContainer">
+            <input className="searchbar" type="text" placeholder="Search..." name="search" />
+            <input className="submit" type="button" value="Submit" />
+        </div>
     )
 }

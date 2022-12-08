@@ -1,16 +1,71 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+
+  border: 2px solid black;
 }
 
 .HomePage {
-  border: 2px solid black;
+  border: 2px solid rgb(255, 251, 0);
 }
 
-section {
-  border: 2px solid black;
+.searchbarContainer {
+  border: 2px solid green;
+}
+
+.searchbar {
+  width: 92vw;
+  height: 5vh;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.submit {
+  height: 5vh;
+}
+
+.emList {
+  border: 2px solid purple;
+}
+
+.emText {
+  width: 70vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .employeeBox {
-  border: 2px solid black;
+  border: 2px solid red;
+
+  display: flex;
+}
+
+.employeeBox > .emText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  clip-path: circle(50.0% at 50% 50%);
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    height: 30%;
+    width: 30%;
+  }
+
+  .submit {
+    display: none;
+  }
 }
