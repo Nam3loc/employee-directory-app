@@ -29,6 +29,16 @@
   border: 2px solid purple;
 }
 
+h3 {
+  /* text-decoration: none; */
+  color: black;
+}
+
+p {
+  /* text-decoration: none; */
+  color: black;
+}
+
 .emText {
   width: 70vw;
 
@@ -43,7 +53,7 @@
 
   display: flex;
 
-  width: 97.8vw;
+  width: 97.4vw;
 
   cursor: pointer;
 }

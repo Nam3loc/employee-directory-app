@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useParams } from 'react-router-dom';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import EmployeeList from './components/EmployeeList';
@@ -15,7 +15,7 @@ function App() {
 
 				<Routes>
 					<Route path='/' element={<EmployeeList />} />
-					<Route path='/EmplyeePage:symbol' element={<EmployeePage />} />
+					<Route path='/:id' element={<EmployeePage />} />
 				</Routes>
 			</div>
 		</div>
