@@ -3,17 +3,17 @@ import dataArr from '../data';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import Header from "./Header";
+import SearchBar from "./SearchBar";
 
 export default function EmployeeList(props) {
   const [info, setInfo] = useState(null);
 
   const data = dataArr.map((ele, idx) => {
     return (
-      <EmployeeListItem key={idx} {...ele} />
+      <Link to={`/employee/${idx}`} style={{textDecoration:"none"}}><EmployeeListItem key={idx} {...ele} /></Link>
     )
   })
-
-  const { id } = useParams();
 
   const getInfo = async () => {
     try {
@@ -31,6 +31,10 @@ export default function EmployeeList(props) {
   }, []);
 
   return (
-    <Link to={`/${id}`} style={{textDecoration:"none"}}><section className="emList">{data}</section></Link>
+    <main>
+      <Header />
+			<SearchBar />
+      <section className="emList">{data}</section>
+    </main>
   )
 }

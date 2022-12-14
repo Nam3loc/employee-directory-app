@@ -83,3 +83,18 @@ img {
     display: none;
   }
 }
+
+.employeePageHeader {
+  display: flex;
+}
+
+.employeePageHeader > .emText {
+  display: flex;
+  justify-content: baseline;
+}
+
+.employeePageHeader > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -9,13 +9,10 @@ import EmployeePage from './components/EmployeePage';
 function App() {
 	return (
 		<div className="App">
-			<div className="HomePage">
-				<Header />
-				<SearchBar />
-
+			<div className="HomePage">			
 				<Routes>
 					<Route path='/' element={<EmployeeList />} />
-					<Route path='/:id' element={<EmployeePage />} />
+					<Route path='/employee/:id' element={<EmployeePage />} />
 				</Routes>
 			</div>
 		</div>
